@@ -35,7 +35,7 @@
                     and enumerating its multiples in steps of p as usual, 
                     marking the corresponding positions in the array as non-prime.
 """
-### Function of Sieve Of Eratosthenes
+### FUNCTION SIEVE OF ERATOSTHENES
 def SieveOfEratosthenes(n: int):
     # Step 1: Create a list of consecutive intergers from 2 thround n: (2,3,4,...,n)
     isPrime = [True for i in range(n+1)]
@@ -57,7 +57,7 @@ def SieveOfEratosthenes(n: int):
         if isPrime[i] is True:
             print(i)
 
-### Function of Segment Sieve
+### FUNCTION SEGMENT SIVE
 import math
 # Prime store Prime numbers from [0,√n], next_prime store Prime numbers from [√n,n]
 prime = []
@@ -117,8 +117,6 @@ def SegmentSive(n):
     #Print Primes number
     for each in prime: 
         print(each)
-SegmentSive(111)
-
 ###--------------CycTrung-------------###
 ###--------All Code is Garbage--------###
 ###-----------bit.ly/YTBcyc-----------###
