@@ -53,9 +53,12 @@ def SieveOfEratosthenes(n: int):
     # Step 5:
     # If you wanna print all Primes from [x,n]
     # Let's change "range(n+1)" to "range(x,n+1)"
+    prime=[]
     for i in range(n+1):
         if isPrime[i] is True:
-            print(i)
+            prime.append(i)
+            #print(i)
+    return prime
 
 ### FUNCTION SEGMENT SIVE
 import math
@@ -114,9 +117,10 @@ def SegmentSive(n):
     #Merge prime and next_prime into 1
     prime+=next_prime
     next_prime.clear()
-    #Print Primes number
-    for each in prime: 
-        print(each)
+    # #Print Primes number
+    # for each in prime: 
+    #     print(each)
+    return prime
 ###--------------CycTrung-------------###
 ###--------All Code is Garbage--------###
 ###-----------bit.ly/YTBcyc-----------###
